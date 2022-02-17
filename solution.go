@@ -10,6 +10,12 @@ type myInt int
 // CalcSquare(10.0, SidesSquare)
 // CalcSquare(10.0, SidesCircle)
 
+const (
+	SidesTriangle myInt = 3
+	SidesSquare   myInt = 4
+	SidesCircle   myInt = 0
+)
+
 func CalcSquare(sideLen float64, sidesNum myInt) float64 {
 	switch sidesNum {
 	case 0:
